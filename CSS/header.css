@@ -3,6 +3,8 @@ header {
   align-items: center;
   justify-content: space-around;
   padding-bottom: 5px;
+  background-color: forestgreen;
+  color: antiquewhite;
 }
 header > img {
   height: 5em;
