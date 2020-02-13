@@ -22,6 +22,8 @@ li a {
 li a:hover {
   background-color: #111;
 }
-.seleccionada {
+.seleccionada,
+.seleccionada:hover {
   background-color: limegreen;
+  cursor: default;
 }
