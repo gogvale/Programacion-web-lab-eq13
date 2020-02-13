@@ -15,3 +15,6 @@ body {
   width: 99vw;
   margin: auto;
 }
+code {
+  background-color: lightgray;
+}
