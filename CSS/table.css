@@ -4,11 +4,14 @@ td {
   margin: 0 auto; /*centra la tabla en el medio de la pagina*/
   border: 1px solid black;
   border-collapse: collapse;
-  width: 50%;
+  width: 70vw;
   height: 1em;
 }
 th,
 td {
   padding: 5px;
   text-align: center;
+}
+th {
+  background-color: lightgrey;
 }

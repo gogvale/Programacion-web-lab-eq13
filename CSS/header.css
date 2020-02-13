@@ -5,7 +5,9 @@ header {
   padding-bottom: 5px;
   background-color: forestgreen;
   color: antiquewhite;
+  width: 100%;
+  text-align: center;
 }
 header > img {
-  height: 5em;
+  width: 8em;
 }
