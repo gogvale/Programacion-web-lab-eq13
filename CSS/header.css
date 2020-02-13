@@ -11,3 +11,9 @@ header {
 header > img {
   width: 8em;
 }
+@media screen and (max-width: 600px) {
+  header {
+    display: none;
+    height: 0;
+  }
+}
