@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../CSS/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Equipo 13</title>
+    <title>Equipo 13 - Resumen HTML5</title>
   </head>
   <body>
     <header>
@@ -18,7 +18,7 @@
       <img src="../Images/uanl.png" alt="Logo UANL" />
     </header>
     <nav>
-      <ul>
+      <ul id="nav">
         <li><a href="../index.html">Início</a></li>
         <li><a href="./Practica_01.html">Práctica #1</a></li>
         <li><a href="./Practica_02.html">Práctica #2</a></li>
@@ -31,11 +31,125 @@
       </ul>
     </nav>
     <div class="content">
+      <h1>¿Qué es el HTML5?</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt
-        quo debitis tempora culpa, sunt explicabo architecto necessitatibus
-        asperiores laborum? Temporibus ab veritatis animi libero sit asperiores
-        aliquam quam reprehenderit?
+        HTML5 es una combinación de nuevas etiquetas de markup (lenguaje) HTML,
+        propiedades CSS3, JavaScript y algunas tecnologías complementarias de
+        apoyo, pero que técnicamente son independientes de la propia
+        especificación HTML5.
+      </p>
+      <p>
+        Podemos definir la especificación HTML5 como nuevos elementos de markup
+        o sintaxis, utilizados por los diseñadores para crear páginas web junto
+        con las etiquetas utilizadas a día de hoy.&nbsp;
+      </p>
+      <h1>Novedades</h1>
+      <p>
+        La familia HTML5 incluye las nuevas etiquetas y tecnologías como CSS3,
+        Geolocalización, Almacenamiento Web (Web Storage), Web Workers y Web
+        Sockets entre otras. Todas ellas suponen una actualización de gran
+        potencia al conjunto de herramientas ya existente, y con ellas se pueden
+        crear páginas web más sofisticadas y útiles.
+      </p>
+      <h2>Video y Audio</h2>
+      <p>
+        La especificación HTML5 incluye etiquetas que nos permiten integrar
+        contenidos multimedia sin necesidad de complementos de navegador. Las
+        etiquetas &lt;video&gt; y &lt;audio&gt; sirven para integrar video y
+        audio en las páginas web de la misma forma que actualmente se hace con
+        los archivos de imagen utilizando la etiqueta &lt;img&gt;.
+      </p>
+      <h3>Ejemplo</h3>
+      <p>&lt;video src="catz.mp4" width="400" height="300"&gt;&lt;/video&gt;</p>
+      <p>
+        &lt;audio src="high_seas_rip.mp3" controls preload="auto"
+        autobuffer&gt;&lt;/audio&gt;
+      </p>
+      <h2>Canvas</h2>
+      <p>
+        El elemento canvas funciona a modo de superficie de dibujo dentro de una
+        página web (de ahí le viene el nombre). Dentro de esta superficie de
+        dibujo podemos crear formas con colores, gradientes y patrones de
+        relleno. Podemos manipular los pixels de forma interactiva en pantalla,
+        mostrar textos y exportar los contenidos hacia archivos de imagen
+        estática, como .PNG. Podemos también utilizar JavaScript o las nuevas
+        funciones de animación de CSS3 para que los objetos que creamos puedan
+        moverse, desaparecer, cambiar de tamaño, etc.
+      </p>
+      <h3>Ejemplo</h3>
+      <div style="width: 100%;">
+        <div style="width: 50%;float: left;">
+          <code>
+            <p>&lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;</p>
+            <p>&lt;script&gt;</p>
+            <p>
+              &nbsp; &nbsp;var canvas = document.getElementById ("myCanvas"),
+            </p>
+            <p>&nbsp; &nbsp; context = canvas.getContext("2d");</p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp;// x = 10, y = 20, width = 200, height
+              = 100
+            </p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp;context.fillRect(10, 20, 200, 100);
+            </p>
+            <p>&nbsp; &nbsp;&lt;/script&gt;</p>
+          </code>
+        </div>
+        <div style="margin-left: 50%;">
+          <img style="width: 100%;" src="../Images/canvas_demo_01.jpg" alt="" />
+          <caption>
+            Ejemplo de canvas
+          </caption>
+        </div>
+      </div>
+      <h2>Tags obsoleta/mejoradas</h2>
+      <p>
+        Parte de las convenciones de HTML5 también es volver obsoletas ciertas
+        tags que eran poco utilizada, que fueron reemplazadas por tags mejores o
+        mismo mejoradas, como por ejemplo &lt;i&gt; → &lt;em&gt;, que no solo
+        pone el texto en negritas, sino que también agrega énfasis en la lectura
+        de texto para gente que navega con discapacidad visual.
+      </p>
+      <h2>Geolocalización</h2>
+      <p>
+        Uno de los mayores cambios fue la oportunidad de acceder a la ubicación
+        geográfica del usuario, lo que facilita mucho tareas como búsqueda de
+        sesiones de cine cerca de un usuario o cosas más complejas cómo calcular
+        rutas por Google Maps, por ejemplo. Todo eso se puede utilizar a través
+        de las nuevas APIs de HTML5.
+      </p>
+      <h2>Otros cambios</h2>
+      <ul>
+        <li>Formularios Web</li>
+        <li>Web Workers</li>
+        <li>Almacenamiento Web</li>
+        <li>CSS3: Animaciones y transiciones</li>
+        <li>
+          CSS3: Fondos, bordes, colores RGBa, gradientes, sombreados y esquinas
+          redondeadas
+        </li>
+        <li>Tipos de letra **@font-face** para la web</li>
+      </ul>
+      <p>
+        Se vale notar que no hay una versión final de HTML5, sino que es un
+        proyecto que está cambiando de manera continua, cada vez más agregando
+        nuevas tecnologías y funcionalidad.
+      </p>
+      <h1>Conclusiones</h1>
+      <h2>Gabriel Oliveira Galvão do Vale (1889469)</h2>
+      <p>
+        En esa práctica pude aprender más sobre el significado de la diferencia
+        entre el HTML que conocíamos desde los 90 con la mayoría de las páginas
+        que eran enseñados en las escuelas y el nuevo HTML, todas las
+        funcionalidades que pusieron y las posibilidades que eso nos trae, en
+        específico me llamó mucho la atención la tag de &lt;canvas&gt;, que como
+        su propio nombre dice, es un canvas para poder dibujar cualquier cosa en
+        una página web (y en conjunto con javascript y css se pueden hacer
+        animaciones increíbles en cualquier navegador).
+      </p>
+      <p>
+        <br />
       </p>
     </div>
   </body>
