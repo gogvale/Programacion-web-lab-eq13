@@ -1,7 +1,7 @@
 .content {
   padding-top: 2em;
   min-height: 75vh;
-  width: 80vw;
+  width: 60vw;
   margin: auto;
   padding-bottom: 5em;
 }
@@ -12,6 +12,7 @@
   border: solid black;
 }
 body {
+  font-size: 21px;
   width: 99vw;
   margin: auto;
 }
