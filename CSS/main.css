@@ -19,3 +19,22 @@ body {
 code {
   background-color: lightgray;
 }
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1em;
+  }
+  .content {
+    width: 90vw;
+  }
+}
+.parent {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
+}
+.child {
+  width: 400px;
+  align-self: center;
+}
