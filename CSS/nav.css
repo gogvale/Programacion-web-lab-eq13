@@ -10,7 +10,7 @@ ul#nav {
   float: left;
 }
 
-li a {
+#nav li a {
   display: block;
   color: white;
   text-align: center;

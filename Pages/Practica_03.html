@@ -35,7 +35,293 @@
       </ul>
     </nav>
     <div class="content">
-      <a href="./Playground/Practica_03.1.html">Demo CSS - Equipo 13</a>
+      <h1>
+        Reset CSS
+      </h1>
+      <p>
+        Todos los elementos HTML incluyen márgenes por defecto. Aunque los
+        navegadores web actuales tienen una calidad muy superior a los antiguos,
+        conviene saber que cada motores de restitución empleado por los
+        navegadores aplica sus propias reglas para mostrar los elementos en
+        pantalla. En teoría esto quiere decir que el margen por defecto de 10
+        pixeles en un navegador X puede transformarse en 15 pixels en el
+        navegador Y. Estas diferencias generan resultados no homogéneos a la
+        hora de ver las páginas en distintos sistemas (no obstante, las
+        diferencias tampoco son tan drásticas como hemos sugerido en este
+        ejemplo, pero existen y hay que contar con ellas).
+      </p>
+      <p>
+        Eric Meyer fue el primer desarrollador que preparó hojas de estilo de
+        reset, que después distribuyó para uso público. Puedes utilizar sus
+        reglas de estilo en este ejercicio. Si quieres buscar más información
+        sobre las técnicas de reset, visita la web
+        <a href="http://meyerweb.com/eric/thoughts/2007/04/18/reset-reasoning/"
+          >http://meyerweb.com/eric/thoughts/2007/04/18/reset-reasoning/</a
+        >
+      </p>
+      <p>
+        Muchos diseñadores se preparan sus propias hojas de estilos de reset
+        para resolver sus propias necesidades. Por ejemplo, si la familia de
+        fuentes que utilizas con más frecuencia es Verdana, puedes añadir esta
+        regla al estilo del elemento body.
+      </p>
+
+      <h1>
+        Historia
+      </h1>
+      <p>
+        Cuando se empezó con el diseño web a mediados de los 90, el único método
+        que se podía emplear para crear estructuras visuales complejas, como por
+        ejemplo la presentación en varias columnas, consistía en emplear el
+        elemento tabla (&lt;table&gt;). La tabla HTML estaba pensada
+        inicialmente para mostrar datos de manera estructurada, en filas,
+        columnas y celdas. Sin embargo los diseñadores empezaron a utilizar este
+        elemento como base para las estructuras visuales de las páginas. En
+        aquel momento esa técnica estaba plenamente justificada: las tablas era
+        lo único que tenían para generar el tipo de diseños que se necesitaban
+        y, además, eran un recurso extremadamente flexible.
+      </p>
+      <p>
+        A partir de aquí, empezaron a utilizarse técnicas como el anidamiento de
+        tablas, es decir, crear tablas dentro de celdas de otras tablas de mayor
+        tamaño. Por ejemplo, el código para una página normal de dos columnas
+        podía empezar creando una tabla de tres filas y dos columnas:
+      </p>
+      <p>
+        Puesto que la primera fila se iba a convertir en la sección de cabecera,
+        no interesaría que quedase dividida en dos columnas. La etiqueta HTML
+        &lt;colspan&gt; permite fusionar las dos celdas:
+      </p>
+      <p>
+        En esta primera fila el diseñador, por ejemplo podría intentar insertar
+        una sección independiente de tres columnas, para mostrar un logo y otros
+        elementos, como una barra de navegación o un campo para pedir
+        credenciales de usuario. Para añadir esta sección, el diseñador tenía
+        que crear una nueva tabla (esta vez con una fila de tres columnas)
+        dentro de la primera fila de la tabla inicial:
+      </p>
+      <p>
+        CSS ha sustituido ya el empleo de tablas para organizar las páginas, por
+        lo que los elementos de tabla de HTML van regresando, poco a poco, a su
+        función original, que es la de mostrar datos estructurados, y abandonan
+        su papel como armazón visual de las páginas.
+      </p>
+
+      <h1>
+        Presentación del &lt;div&gt;
+      </h1>
+      <p>
+        Podemos considerar al elemento&lt;div&gt; como un contenedor genérico en
+        el que podemos poner elementos relacionados entre sí de forma lógica. La
+        apertura y cierre de etiquetas&lt;div&gt; suele hacerse rodeando a otros
+        elementos de la página, de forma que dichos elementos quedan anidados
+        dentro del contenedor. Puedes tener en la misma página todos los
+        elementos &lt;div&gt; que consideres necesarios y con frecuencia se
+        utilizan para crear el armazón visual. Un elemento &lt;div&gt; suele
+        llevar un atributo ID (con lo que adquiere un “nombre” explícito dentro
+        de la página) o bien pertenecer a una clase CSS, utilizándose ambos como
+        medio para aplicar al contenedor uno o más estilos CSS. El empleo de
+        elementos &lt;div&gt; facilita a otras personas la identificación de las
+        diversas secciones en que se subdivide la página y también nos ayuda a
+        controlar y aplicar estilos en cada una de ellas.
+      </p>
+      <h1>
+        Float
+      </h1>
+      <p>
+        La propiedad float en CSS hace posible que un texto pueda escribirse
+        alrededor de una imagen. Este estilo ha sido tomado del diseño de
+        imprenta, donde a este efecto se le llama “justificación” del texto. CSS
+        consigue el mismo efecto haciendo que los elementos que siguen a un
+        elemento “flotante” puedan rodearlo, cambiando su posición relativa con
+        respecto a él. Este comportamiento también nos sirve para crear columnas
+        en una página.
+      </p>
+
+      <p>
+        El valor float se puede también declarar como “left”. En el ejemplo
+        anterior, la imagen pasaría al lado izquierdo del div contenedor, y el
+        texto se empezaría llenando el lado derecho restante.
+      </p>
+      <p>
+        Los únicos valores posibles para float son “left”, “right” y “none”. No
+        se puede centrar un objeto utilizando esta propiedad.
+      </p>
+      <p>
+        Si queremos tener múltiples elementos flotantes dentro del mismo
+        contenedor, el resultado es que se alinean entre sí. Este comportamiento
+        se suele utilizar en ciertas funciones habituales de las páginas web,
+        como por ejemplo los menús horizontales o las galerías de imágenes.Es
+        fundamental conocer cómo interactúan múltiples elementos flotantes unos
+        con otros a fin de utilizarlos correctamente.
+      </p>
+
+      <h1>
+        Columnas
+      </h1>
+      <h2>
+        Definición y uso
+      </h2>
+      <p>
+        Lacolumnspropiedad es una propiedad abreviada para:
+      </p>
+      <ul>
+        <li>
+          <p>
+            <a href="https://www.w3schools.com/cssref/css3_pr_column-width.asp"
+              >ancho de columna</a
+            >
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="https://www.w3schools.com/cssref/css3_pr_column-count.asp"
+              >recuento de columnas</a
+            >
+          </p>
+        </li>
+      </ul>
+      <p>
+        La parte de ancho de columna definirá el ancho mínimo para cada columna,
+        mientras que la parte de conteo de columnas definirá el número máximo de
+        columnas. Al usar esta propiedad, el diseño de varias columnas se
+        dividirá automáticamente en una sola columna en anchos de navegador
+        estrechos, sin la necesidad de consultas de medios u otras reglas.
+      </p>
+
+      <h1>
+        Clear
+      </h1>
+      <h2>
+        Definición y uso
+      </h2>
+      <p>
+        Laclearpropiedad especifica en qué lados de un elemento los elementos
+        flotantes no pueden flotar.
+      </p>
+      <p>
+        Cuando es aplicado a bloques no flotantes, mueve el
+        <a href="https://developer.mozilla.org/en-US/docs/CSS/box_model"
+          >border edge</a
+        >del elemento hacia abajo hasta que esté debajo del
+        <a href="https://developer.mozilla.org/en-US/docs/CSS/box_model"
+          >margin edge</a
+        >de todos los floats relevantes. Este movimiento (cuando acontece) causa
+        que
+        <a href="https://developer.mozilla.org/en-US/docs/CSS/margin_collapsing"
+          >margin collapsing</a
+        >no ocurra.
+      </p>
+      <p>
+        Cuando se aplica a elementos flotantes, mueve el
+        <a href="https://developer.mozilla.org/en-US/docs/CSS/box_model"
+          >margin edge</a
+        >del elemento debajo del
+        <a href="https://developer.mozilla.org/en-US/docs/CSS/box_model"
+          >margin edge</a
+        >de todos los floats relevantes. Esto afecta la posición de floats
+        posteriores, ya que estos no pueden ser posicionados más arriba que los
+        primeros.
+      </p>
+      <p>
+        Los floats que son relevantes para ser limpiados (cleared) son los
+        primeros floats dentro del mismo
+        <a
+          href="https://developer.mozilla.org/es/docs/Web/Guide/CSS/Block_formatting_context"
+          >contexto de formato de bloque</a
+        >.
+      </p>
+
+      <h1>
+        Menú de navegación
+      </h1>
+      <p>
+        <img
+          src="https://lh5.googleusercontent.com/gxrF-6-TFxQg_Flkpma65tT-N2oriBITQvdnnsRmKM0nQnyfwI2LwxDkj-4_GYt4dIEvPVVBP5fytD3vEpn7IJ6tVV6A9x64g4C8aN9WGCEQkc4m7-SNsbgU6I1FAN0_kqyvf9xB"
+          width="602"
+          height="339"
+        />
+      </p>
+      <h2>
+        Barras de navegación
+      </h2>
+      <p>
+        Tener una navegación fácil de usar es importante para cualquier sitio
+        web.
+      </p>
+      <p>
+        Con CSS puede transformar menús HTML aburridos en atractivas barras de
+        navegación.
+      </p>
+      <h2>
+        Barra de navegación = Lista de enlaces
+      </h2>
+      <p>
+        Una barra de navegación necesita HTML estándar como base.
+      </p>
+      <p>
+        En nuestros ejemplos construiremos la barra de navegación a partir de
+        una lista HTML estándar.
+      </p>
+      <p>
+        Una barra de navegación es básicamente una lista de enlaces, por lo que
+        usar los elementos &lt;ul&gt; y &lt;li&gt; tiene mucho sentido:
+      </p>
+
+      <h1>
+        Estilos de texto
+      </h1>
+      <p>
+        Hasta aquí hemos añadido los estilos dentro de una hoja de estilos
+        interna en vez de hacerlo sobre una externa. Cuando estamos diseñando la
+        estructura de las páginas, el empleo de hojas de estilo internas es una
+        cuestión de comodidad: resulta más sencillo para crear y modificar
+        reglas si las tenemos dentro de la página y podemos llegar a ellas
+        desplazando la ventana que si las tenemos en un archivo externo. De
+        momento vamos a asociar una hoja de estilos externa que añade reglas de
+        base para elementos como títulos, listas y párrafos.
+      </p>
+
+      <h1>
+        Márgenes internos y externos
+      </h1>
+      <p>
+        El primero consiste en añadir margen interno (padding) al elemento div
+        contenedor. En este caso la ventaja es que todos los elementos dentro de
+        este div se ven afectados al mismo tiempo, es una solución rápida y
+        eficiente. Su desventaja es que aumenta la anchura total del propio
+        contenedor. Para compensar esta expansión, tenemos que dejar algo de
+        espacio adicional a los lados. Este comportamiento puede generar cierta
+        confusión y provocar que las páginas se restituyan incorrectamente si no
+        tenemos cuidado.
+      </p>
+      <p>
+        El segundo método consiste en añadir márgenes externos a los elementos
+        que están dentro del propio div. Su desventaja es que necesitamos más
+        código y hay que prestar atención a los detalles, tenemos que ir viendo
+        cómo se posicionan los elementos individualmente. Su ventaja es que el
+        posicionamiento de la columna es más predecible, puesto que solo tenemos
+        que tener en cuenta una anchura total.
+      </p>
+      <p>
+        Finalmente, conviene destacar que lo habitual es aplicar una combinación
+        de ambos métodos en cualquier estructura de presentación. Por tanto,
+        debes conocer bien el comportamiento y los efectos de cada uno de ellos.
+      </p>
+
+      <h1>
+        Conclusión
+      </h1>
+      <h2>
+        Gabriel Oliveira Galvão do Vale
+      </h2>
+      <p>
+        Con esa lección pudimos ver varios ejemplos de cómo las propiedades de
+        CSS nos ayudan a cambiar la presentación de una página, cómo cada
+        navegador implementa su propio estilo para tags básicas de html (y cómo
+        podemos sobrepasar eso) y algunas actividades para aprender a estilizar
+        las partes de nuestra página.
+      </p>
     </div>
   </body>
 </html>
