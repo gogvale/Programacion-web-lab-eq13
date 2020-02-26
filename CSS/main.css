@@ -4,6 +4,8 @@
   width: 60vw;
   margin: auto;
   padding-bottom: 5em;
+  background-color: #fff;
+  padding: 3em;
 }
 .presentacion {
   margin: 5em auto;
@@ -15,6 +17,7 @@ body {
   font-size: 21px;
   width: 99vw;
   margin: auto;
+  background-color: burlywood;
 }
 code {
   background-color: lightgray;
