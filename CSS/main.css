@@ -15,7 +15,7 @@
 }
 body {
   font-size: 21px;
-  width: 99vw;
+  max-width: 100vw;
   margin: auto;
   background-color: burlywood;
 }
@@ -27,7 +27,12 @@ code {
     font-size: 1em;
   }
   .content {
-    width: 90vw;
+    width: 70vw;
+  }
+  img {
+    max-width: 70vw;
+    height: auto;
+    width: auto;
   }
 }
 .parent {
