@@ -30,7 +30,7 @@ code {
     width: 70vw;
   }
   img {
-    max-width: 70vw;
+    max-width: 100%;
     height: auto;
     width: auto;
   }
