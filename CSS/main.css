@@ -7,6 +7,9 @@
   background-color: #fff;
   padding: 3em;
 }
+.content p {
+  text-align: justify;
+}
 .presentacion {
   margin: 5em auto;
   text-align: center;
