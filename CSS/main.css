@@ -1,14 +1,14 @@
 .content {
-  padding-top: 2em;
   min-height: 75vh;
-  width: 60vw;
+  width: 50vw;
   margin: auto;
   padding-bottom: 5em;
   background-color: #fff;
-  padding: 3em;
+  padding: 8em;
+  padding-top: 2em;
 }
 .content p {
-  text-align: justify;
+  /* text-align: justify; */
 }
 .presentacion {
   margin: 5em auto;
@@ -25,12 +25,15 @@ body {
 code {
   background-color: lightgray;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body {
     font-size: 1em;
   }
   .content {
-    width: 70vw;
+    max-width: 100%;
+    width: auto;
+    padding: 1em;
+    margin: 0;
   }
   img {
     max-width: 100%;
