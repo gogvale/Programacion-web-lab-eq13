@@ -1,340 +1,376 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="../Images/logo_oso.png" />
-    <link rel="stylesheet" href="../CSS/table.css" />
-    <link rel="stylesheet" href="../CSS/nav.css" />
-    <link rel="stylesheet" href="../CSS/header.css" />
-    <link rel="stylesheet" href="../CSS/main.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Equipo 13</title>
-  </head>
-  <body>
-    <header>
-      <img src="../Images/fime.gif" alt="Logo Fime" />
-      <h1>Universidad Autónoma de Nuevo León</h1>
-      <img src="../Images/uanl.png" alt="Logo UANL" />
-    </header>
-    <nav>
-      <ul id="nav">
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="./Practica_01.html">Práctica #1</a></li>
-        <li><a href="./Practica_02.html">Práctica #2</a></li>
-        <li><a href="./Practica_03.html">Práctica #3</a></li>
-        <li>
-          <a class="seleccionada" href="./Practica_04.html">Práctica #4</a>
-        </li>
-        <li><a href="./Practica_05.html">Práctica #5</a></li>
-        <li><a href="./Practica_06.html">Práctica #6</a></li>
-        <li><a href="./Practica_07.html">Práctica #7</a></li>
-        <li><a href="./Practica_Final.html">Práctica Final</a></li>
-      </ul>
-    </nav>
-    <div class="content">
-      
-      <h1>Resumen</h1>
-	<p>Los documentos HTML (iniciales de Hypertext Markup Language) utilizan la extensión .htm o .html. Esta extensión avisa al navegador web o a un dispositivo como un teléfono móvil, que en este archivo hay contenido HTML y dicho contenido se restituye en la ventana del navegador o la pantalla del dispositivo siguiendo las reglas del lenguaje HTML.</p>
-	<p>Las etiquetas se utilizan para definir el contenido de una página HTML. Estas etiquetas quedan enmarcadas dentro de los símbolos "menor que" (<) y "mayor que" (>) y se ponen al principio y al final de un objeto o texto utilizado en la página HTML.
-</p>
-<h2>Doctype indica al navegador qué debe esperar</h2>
-<p>Al inicio de toda página web debe aparecer una declaración Doctype. La declaración de "tipo de documento" le aporta pistas al navegador sobre el tipo de información que se va a encontrar en la página. Puesto que las especificaciones de HTML y XHTML son distintas, el navegador sabe así qué lenguaje va a interpretar y representar. El navegador restituye la página empezando por la primera línea y va avanzando de principio a fin, por lo que esta indicación en la primera línea de todas tiene pleno sentido. Aunque no es obligatoria, es una buena práctica empezar siempre utilizando doctype al principio de nuestras páginas</p>
-<h2>El W3C y la validación de la página</h2>
-<p>W3C es la abreviatura con la que se conoce al World Wide Web Consortium una organización sin ánimo de lucro cuyo objetivo consiste en orientar la evolución de la Web. El W3C ofrece directrices y reglas para especificaciones como HTML y XHTML. Una forma de definir la validez del código HTML o XHTML que generamos es utilizar el servicio online de validación del W3C, que es gratuito.</p>
-<h2>Estructura HTML</h2>
-<p>Uno de los conceptos más importantes que debemos dominar a la hora de diseñar contenidos web es la estructura anidada de los documentos HTML. Los elementos suelen presentarse contenidos unos dentro de otros. Por lo general tenemos que empezar por diseñar la estructura HTML de la página para después continuar con los estilos, aplicando CSS.
-</p>
-<h2>Insertar imágenes en HTML</h2>
-<p>Para colocar imágenes dentro de un documento HTML se utiliza la etiqueta <img>. Al igual que ocurre con la etiqueta <a>, la etiqueta de imagen por sí sola no hace nada. Depende del valor de los atributos que especifiquemos, que indican qué imagen se debe mostrar y cómo ha de hacerse.</p>
-	<h2>El papel de CSS</h2>
-	<p>CSS (Cascading Style Sheets) utiliza un lenguaje distinto de HTML. CSS nos permite aplicar estilos de manera coherente a los distintos elementos de las páginas del sitio web, de modo que los títulos, listas y párrafos pueden verse igual en todas y cada una de las páginas.</p>
-	<h2> Los estilos de clase y el elemento <span></h2>
-		<p>Los selectores de etiqueta se utilizan con mucha frecuencia, pero solo se pueden aplicar a elementos HTML. Cuando lo que queremos es modificar el estilo de alguna cosa que no coincide exactamente con una etiqueta, por ejemplo cambiar el color de una única palabra dentro de un párrafo, el selector de etiqueta no es una buena opción (e incluso en algunas ocasiones resulta imposible de aplicar). En este caso podemos utilizar el selector de clase, que es una regla CSS que se puede aplicar a cualquier elemento dentro de una página. Los selectores de clase tienen unas opciones de nomenclatura flexibles, pero es muy conveniente utilizar nombres que describan adecuadamente lo que hacen.</p>
-		<h2>Uso de textos y tipos de letra en la web</h2>
-		<p>A la hora de diseñar para la web, podemos formatear el texto de una forma parecida a como se hace en las aplicaciones de procesamiento de textos y diseño publicitario de los equipos de escritorio, pero debemos tener en cuenta algunas diferencias importantes. Cuando especificamos el uso de una fuente (tipo de letra) concreta, esta fuente ha de estar instalada en el ordenador o el dispositivo del usuario donde se va a restituir la página. Si el ordenador o dispositivo no dispone de esa fuente, el navegador la sustituye por otra.
-Tipos de letra de uso común en la web
- 
-Estas son las Fuentes que podemos utilizar con más confianza en la Web:
-<ol>
-<li>Arial</li>
-<li>Verdana</li>
-<li>Georgia</li>
-<li>Times New Roman</li>
-<li>Courier</li>
-<li>Trebuchet</li>
-<li>Lucida</li>
-<li>Tahoma</li>
-<li>Impact</li>
-</ol>
-La lista es pequeña porque tiene en cuenta las plataformas Mac y Windows y suponemos además que aún acceden a la web muchos ordenadores antiguos.
-</p>
-<h2>Las medidas en pixels y puntos no son la mejor opción para el tamaño</h2>
-<p>La declaración del tamaño de letra en puntos puede ser algo obvio si vienes del mundo de las artes gráficas, y si tienes experiencia con el diseño gráfico por ordenador, seguramente te manejarás muy bien usando los pixels como unidad de medida. La propiedad font-size en CSS nos permite utilizar ambas unidades.
-</p>
-      
-      <h1>Preguntas</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="../Images/logo_oso.png" />
+  <link rel="stylesheet" href="../CSS/table.css" />
+  <link rel="stylesheet" href="../CSS/nav.css" />
+  <link rel="stylesheet" href="../CSS/header.css" />
+  <link rel="stylesheet" href="../CSS/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Equipo 13</title>
+</head>
+
+<body>
+  <header>
+    <img src="../Images/fime.gif" alt="Logo Fime" />
+    <h1>Universidad Autónoma de Nuevo León</h1>
+    <img src="../Images/uanl.png" alt="Logo UANL" />
+  </header>
+  <nav>
+    <ul id="nav">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="./Practica_01.html">Práctica #1</a></li>
+      <li><a href="./Practica_02.html">Práctica #2</a></li>
+      <li><a href="./Practica_03.html">Práctica #3</a></li>
+      <li>
+        <a class="seleccionada" href="./Practica_04.html">Práctica #4</a>
+      </li>
+      <li><a href="./Practica_05.html">Práctica #5</a></li>
+      <li><a href="./Practica_06.html">Práctica #6</a></li>
+      <li><a href="./Practica_07.html">Práctica #7</a></li>
+      <li><a href="./Practica_Final.html">Práctica Final</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+
+    <h1>Resumen</h1>
+    <p>Los documentos HTML (iniciales de Hypertext Markup Language) utilizan la extensión .htm o .html. Esta extensión
+      avisa al navegador web o a un dispositivo como un teléfono móvil, que en este archivo hay contenido HTML y dicho
+      contenido se restituye en la ventana del navegador o la pantalla del dispositivo siguiendo las reglas del lenguaje
+      HTML.</p>
+    <p>Las etiquetas se utilizan para definir el contenido de una página HTML. Estas etiquetas quedan enmarcadas dentro
+      de los símbolos "menor que" (&lt;) y "mayor que" (&gt;) y se ponen al principio y al final de un objeto o texto
+        utilizado en la página HTML.
+    </p>
+    <h2>Doctype indica al navegador qué debe esperar</h2>
+    <p>Al inicio de toda página web debe aparecer una declaración Doctype. La declaración de "tipo de documento" le
+      aporta pistas al navegador sobre el tipo de información que se va a encontrar en la página. Puesto que las
+      especificaciones de HTML y XHTML son distintas, el navegador sabe así qué lenguaje va a interpretar y representar.
+      El navegador restituye la página empezando por la primera línea y va avanzando de principio a fin, por lo que esta
+      indicación en la primera línea de todas tiene pleno sentido. Aunque no es obligatoria, es una buena práctica
+      empezar siempre utilizando doctype al principio de nuestras páginas</p>
+    <h2>El W3C y la validación de la página</h2>
+    <p>W3C es la abreviatura con la que se conoce al World Wide Web Consortium una organización sin ánimo de lucro cuyo
+      objetivo consiste en orientar la evolución de la Web. El W3C ofrece directrices y reglas para especificaciones
+      como HTML y XHTML. Una forma de definir la validez del código HTML o XHTML que generamos es utilizar el servicio
+      online de validación del W3C, que es gratuito.</p>
+    <h2>Estructura HTML</h2>
+    <p>Uno de los conceptos más importantes que debemos dominar a la hora de diseñar contenidos web es la estructura
+      anidada de los documentos HTML. Los elementos suelen presentarse contenidos unos dentro de otros. Por lo general
+      tenemos que empezar por diseñar la estructura HTML de la página para después continuar con los estilos, aplicando
+      CSS.
+    </p>
+    <h2>Insertar imágenes en HTML</h2>
+    <p>Para colocar imágenes dentro de un documento HTML se utiliza la etiqueta &lt;img&gt;. Al igual que ocurre con la
+      etiqueta &lt;a&gt;, la etiqueta de imagen por sí sola no hace nada. Depende del valor de los atributos que
+      especifiquemos, que indican qué imagen se debe mostrar y cómo ha de hacerse.</p>
+    <h2>El papel de CSS</h2>
+    <p>CSS (Cascading Style Sheets) utiliza un lenguaje distinto de HTML. CSS nos permite aplicar estilos de manera
+      coherente a los distintos elementos de las páginas del sitio web, de modo que los títulos, listas y párrafos
+      pueden verse igual en todas y cada una de las páginas.</p>
+    <h2> Los estilos de clase y el elemento &lt;span&gt;</h2>
+    <p>Los selectores de etiqueta se utilizan con mucha frecuencia, pero solo se pueden aplicar a elementos HTML. Cuando
+      lo que queremos es modificar el estilo de alguna cosa que no coincide exactamente con una etiqueta, por ejemplo
+      cambiar el color de una única palabra dentro de un párrafo, el selector de etiqueta no es una buena opción (e
+      incluso en algunas ocasiones resulta imposible de aplicar). En este caso podemos utilizar el selector de clase,
+      que es una regla CSS que se puede aplicar a cualquier elemento dentro de una página. Los selectores de clase
+      tienen unas opciones de nomenclatura flexibles, pero es muy conveniente utilizar nombres que describan
+      adecuadamente lo que hacen.</p>
+    <h2>Uso de textos y tipos de letra en la web</h2>
+    <p>A la hora de diseñar para la web, podemos formatear el texto de una forma parecida a como se hace en las
+      aplicaciones de procesamiento de textos y diseño publicitario de los equipos de escritorio, pero debemos tener en
+      cuenta algunas diferencias importantes. Cuando especificamos el uso de una fuente (tipo de letra) concreta, esta
+      fuente ha de estar instalada en el ordenador o el dispositivo del usuario donde se va a restituir la página. Si el
+      ordenador o dispositivo no dispone de esa fuente, el navegador la sustituye por otra.
+      Tipos de letra de uso común en la web
+
+      Estas son las Fuentes que podemos utilizar con más confianza en la Web:
       <ol>
-        <h2>
-          <li>
-            ¿Que es un XML y para qué sirve?
-          </li>
-        </h2>
-        <p>
-          XML son las siglas del Lenguaje de Etiquetado Extensible. La expresión
-          se forma a partir del acrónimo de la expresión inglesa eXtensible
-          Markup Language. Se trata también de un lenguaje estándar que posee
-          una Recomendación del World Wide Web Consortium: Extensible Markup
-          Languajes (XML) (http://www.w3.org/TR/REC-xml/). Con la palabra
-          "Extensible" se alude a la no limitación en el número de etiquetas, ya
-          que permite crear aquellas que sean necesarias.
-        </p>
-        <p>
-          XML surgió como un lenguaje de marcado para sustituir a HTML. Ambos
-          lenguajes son herederos de SGML, el lenguaje de marcas estándar para
-          la descripción formal y de contenido de los documentos, no solamente
-          para la presentación de dichos documentos.
-        </p>
-        <p>
-          Las diferencias fundamentales de XML con respecto a HTML son las
-          siguientes:
-        </p>
-        <ul>
-          <li>No requiere DTD (Document Type Definition),</li>
-          <li>
-            El XML tiene punteros a la estructura de los datos, lo que ahorra
-            tiempo y simplifica el software de aplicación.
-          </li>
-          <li>
-            XML no dispone de soporte para excepciones, por lo que cada etiqueta
-            realiza siempre la misma función.
-          </li>
-          <li>
-            Posee independencia de los navegadores y del sistema de objetos,
-            porque en lugar de añadir etiquetas de presentación al documento se
-            remite a una hoja de estilo realizada en XSL (Extensible Style
-            Language).
-          </li>
-        </ul>
-        <p>Los principales usos de XML son los siguientes:</p>
-        <ul>
-          <li>
-            XML aplicado a los sitios web: permite separar contenido y
-            presentación, y que los mismos datos se puedan mostrar de varias
-            formas distintas sin demasiado esfuerzo.
-          </li>
-          <li>
-            XML para la comunicación entre aplicaciones: representación de los
-            datos muy simple, fácil de transmitir por la red, estándar. En los
-            últimos tiempos este uso se está haciendo muy popular con el
-            surgimiento de los Servicios web.
-          </li>
-          <li>
-            XML para la configuración de programas: representación de los datos
-            simple y estándar, en contraposición con los crípticos formatos
-            propietarios.
-          </li>
-        </ul>
-        <p>Algunas de las aplicaciones XML son las siguientes:</p>
-        <ul>
-          <li>
-            Ofrece mecanismos más versátiles para mostrar datos. Los últimos
-            desarrollos como DOM (Document Object Model) desarrollan APIs
-            (Application Programming interface) que soportan tanto los
-            procesadores de XML como HTML. Se pueden representar (a través de
-            Javascripts o applets de Java) documentos XML en los navegadores Web
-            de una forma más sofisticada que los documentos HTML, ya que XML no
-            sólo proporciona una sintaxis, sino también una semántica.
-          </li>
-          <li>
-            Los buscadores inteligentes pueden buscar la información de forma
-            mucho más precisa, ya que XML etiqueta por su significado de forma
-            muy precisa y se puede localizar de una forma más clara que en los
-            documentos HTML. Con las DTDs (Document Type Declaration)
-            estandarizadas o con los esquemas de XML para distintas
-            aplicaciones, podríamos programar buscadores Web que recuperen la
-            información sobre un producto de cualquier página web sabiendo que
-            todos tendrán el mismo formato de datos (gracias al DTD o al
-            esquema), aunque no tengan necesariamente la misma representación
-            gráfica (gracias a XML/XSL).
-          </li>
-          <li>
-            La creación de una DTD para crear Topic Maps en XML, denominada XTM
-            ha supuesto un salto importante para el desarrollo de la llamada Web
-            Semántica.
-          </li>
-          <li>
-            Intercambio de información entre sistemas diversos y heterogéneos.
-            Ya que las DTD y, sobre todo, los esquemas proporcionan un formato
-            estándar para representar la información sobre un tema específico,
-            puede usarse para facilitar y simplificar el intercambio de
-            información entre distintas fuentes.
-          </li>
-        </ul>
+        <li>Arial</li>
+        <li>Verdana</li>
+        <li>Georgia</li>
+        <li>Times New Roman</li>
+        <li>Courier</li>
+        <li>Trebuchet</li>
+        <li>Lucida</li>
+        <li>Tahoma</li>
+        <li>Impact</li>
+      </ol>
+      La lista es pequeña porque tiene en cuenta las plataformas Mac y Windows y suponemos además que aún acceden a la
+      web muchos ordenadores antiguos.
+    </p>
+    <h2>Las medidas en pixels y puntos no son la mejor opción para el tamaño</h2>
+    <p>La declaración del tamaño de letra en puntos puede ser algo obvio si vienes del mundo de las artes gráficas, y si
+      tienes experiencia con el diseño gráfico por ordenador, seguramente te manejarás muy bien usando los pixels como
+      unidad de medida. La propiedad font-size en CSS nos permite utilizar ambas unidades.
+    </p>
 
-        <h2>
-          <li>
-            ¿Que caracteristicas tiene un documento HTML?
-          </li>
-        </h2>
-        <p>
-          HTML es un lenguaje de marcado de hipertexto. Tiene varias
-          características como lenguaje fácil de usar y fácil de entender.
-          También es fácil de modificar. Se utiliza para crear presentaciones
-          productivas con la ayuda de una serie de etiquetas. Puede diseñar las
-          páginas web agregando gráficos, videos y audios y puede hacerlo más
-          lucrativo usando HTML porque se usa como lenguaje de marcado y el
-          lenguaje de marcado se usa para formatear el diseño en un documento de
-          texto y también ayuda a crear un entorno más dinámico. así como
-          páginas web interactivas agregando imágenes, tablas, audios, videos,
-          enlaces, etc.
-        </p>
-        <p>
-          Con la ayuda de la etiqueta de anclaje ofrecida por HTML, es posible
-          agregar un enlace en cualquier página web. HTML es compatible con todo
-          tipo de plataformas como Windows,
-          <a
-            href="https://hostripples.com/cheap-cpanel-unlimited-hosting.php"
-          ></a
-          >, etc., por lo tanto, también se conoce como lenguaje independiente
-          de la plataforma. HTML es un lenguaje que no distingue entre
-          mayúsculas y minúsculas, es decir, puede usar etiquetas HTML en
-          minúsculas o mayúsculas.
-        </p>
+    <h1>Preguntas</h1>
+    <ol>
+      <h2>
+        <li>
+          ¿Que es un XML y para qué sirve?
+        </li>
+      </h2>
+      <p>
+        XML son las siglas del Lenguaje de Etiquetado Extensible. La expresión
+        se forma a partir del acrónimo de la expresión inglesa eXtensible
+        Markup Language. Se trata también de un lenguaje estándar que posee
+        una Recomendación del World Wide Web Consortium: Extensible Markup
+        Languajes (XML) (http://www.w3.org/TR/REC-xml/). Con la palabra
+        "Extensible" se alude a la no limitación en el número de etiquetas, ya
+        que permite crear aquellas que sean necesarias.
+      </p>
+      <p>
+        XML surgió como un lenguaje de marcado para sustituir a HTML. Ambos
+        lenguajes son herederos de SGML, el lenguaje de marcas estándar para
+        la descripción formal y de contenido de los documentos, no solamente
+        para la presentación de dichos documentos.
+      </p>
+      <p>
+        Las diferencias fundamentales de XML con respecto a HTML son las
+        siguientes:
+      </p>
+      <ul>
+        <li>No requiere DTD (Document Type Definition),</li>
+        <li>
+          El XML tiene punteros a la estructura de los datos, lo que ahorra
+          tiempo y simplifica el software de aplicación.
+        </li>
+        <li>
+          XML no dispone de soporte para excepciones, por lo que cada etiqueta
+          realiza siempre la misma función.
+        </li>
+        <li>
+          Posee independencia de los navegadores y del sistema de objetos,
+          porque en lugar de añadir etiquetas de presentación al documento se
+          remite a una hoja de estilo realizada en XSL (Extensible Style
+          Language).
+        </li>
+      </ul>
+      <p>Los principales usos de XML son los siguientes:</p>
+      <ul>
+        <li>
+          XML aplicado a los sitios web: permite separar contenido y
+          presentación, y que los mismos datos se puedan mostrar de varias
+          formas distintas sin demasiado esfuerzo.
+        </li>
+        <li>
+          XML para la comunicación entre aplicaciones: representación de los
+          datos muy simple, fácil de transmitir por la red, estándar. En los
+          últimos tiempos este uso se está haciendo muy popular con el
+          surgimiento de los Servicios web.
+        </li>
+        <li>
+          XML para la configuración de programas: representación de los datos
+          simple y estándar, en contraposición con los crípticos formatos
+          propietarios.
+        </li>
+      </ul>
+      <p>Algunas de las aplicaciones XML son las siguientes:</p>
+      <ul>
+        <li>
+          Ofrece mecanismos más versátiles para mostrar datos. Los últimos
+          desarrollos como DOM (Document Object Model) desarrollan APIs
+          (Application Programming interface) que soportan tanto los
+          procesadores de XML como HTML. Se pueden representar (a través de
+          Javascripts o applets de Java) documentos XML en los navegadores Web
+          de una forma más sofisticada que los documentos HTML, ya que XML no
+          sólo proporciona una sintaxis, sino también una semántica.
+        </li>
+        <li>
+          Los buscadores inteligentes pueden buscar la información de forma
+          mucho más precisa, ya que XML etiqueta por su significado de forma
+          muy precisa y se puede localizar de una forma más clara que en los
+          documentos HTML. Con las DTDs (Document Type Declaration)
+          estandarizadas o con los esquemas de XML para distintas
+          aplicaciones, podríamos programar buscadores Web que recuperen la
+          información sobre un producto de cualquier página web sabiendo que
+          todos tendrán el mismo formato de datos (gracias al DTD o al
+          esquema), aunque no tengan necesariamente la misma representación
+          gráfica (gracias a XML/XSL).
+        </li>
+        <li>
+          La creación de una DTD para crear Topic Maps en XML, denominada XTM
+          ha supuesto un salto importante para el desarrollo de la llamada Web
+          Semántica.
+        </li>
+        <li>
+          Intercambio de información entre sistemas diversos y heterogéneos.
+          Ya que las DTD y, sobre todo, los esquemas proporcionan un formato
+          estándar para representar la información sobre un tema específico,
+          puede usarse para facilitar y simplificar el intercambio de
+          información entre distintas fuentes.
+        </li>
+      </ul>
 
-        <p>
-          Además de las características mencionadas anteriormente, las
-          características destacadas que ofrece HTML son las siguientes:
-        </p>
-        <ol>
-          <ul>
-            <li>
-              <p>
-                No es un lenguaje sensible a mayúsculas y minúsculas.
-              </p>
-            </li>
+      <h2>
+        <li>
+          ¿Que caracteristicas tiene un documento HTML?
+        </li>
+      </h2>
+      <p>
+        HTML es un lenguaje de marcado de hipertexto. Tiene varias
+        características como lenguaje fácil de usar y fácil de entender.
+        También es fácil de modificar. Se utiliza para crear presentaciones
+        productivas con la ayuda de una serie de etiquetas. Puede diseñar las
+        páginas web agregando gráficos, videos y audios y puede hacerlo más
+        lucrativo usando HTML porque se usa como lenguaje de marcado y el
+        lenguaje de marcado se usa para formatear el diseño en un documento de
+        texto y también ayuda a crear un entorno más dinámico. así como
+        páginas web interactivas agregando imágenes, tablas, audios, videos,
+        enlaces, etc.
+      </p>
+      <p>
+        Con la ayuda de la etiqueta de anclaje ofrecida por HTML, es posible
+        agregar un enlace en cualquier página web. HTML es compatible con todo
+        tipo de plataformas como Windows,
+        <a href="https://hostripples.com/cheap-cpanel-unlimited-hosting.php"></a>, etc., por lo tanto, también se conoce
+        como lenguaje independiente
+        de la plataforma. HTML es un lenguaje que no distingue entre
+        mayúsculas y minúsculas, es decir, puede usar etiquetas HTML en
+        minúsculas o mayúsculas.
+      </p>
 
-            <li>
-              <p>
-                Controla las fuentes, los colores y el posicionamiento mediante
-              </p>
-            </li>
-
-            <li>
-              <p>
-                Trabajadores web: Ciertas aplicaciones web usan scripts pesados
-                para realizar funciones. Los trabajadores web utilizan
-                subprocesos de fondo separados para el procesamiento y no afecta
-                el rendimiento de una página web.
-              </p>
-            </li>
-            <li>
-              <p>
-                Video: puede incrustar video sin complementos o códec patentados
-                por terceros. El video se vuelve tan fácil como insertar una
-                imagen.
-              </p>
-            </li>
-            <li>
-              <p>
-                Lienzo: esta característica permite a un desarrollador web
-                representar gráficos sobre la marcha. Al igual que con el video,
-                no hay necesidad de un complemento.
-              </p>
-            </li>
-            <li>
-              <p>
-                Cachés de aplicaciones: las páginas web comenzarán a almacenar
-                cada vez más información localmente en la computadora del
-                visitante. Funciona como las cookies, pero cuando las cookies
-                son pequeñas, la nueva característica permite archivos mucho más
-                grandes. Google Gears es un excelente ejemplo de esto en acción.
-              </p>
-            </li>
-            <li>
-              <p>
-                Geolocalización: Mejor conocida por su uso en dispositivos
-                móviles, la geolocalización viene con HTML5.
-              </p>
-            </li>
-          </ul>
-        </ol>
-
-        <h2>
-          <li>
-            ¿Qué es y para qué sirve un archivo XHTML?
-          </li>
-        </h2>
-
-        <p>
-          HTML significa eXtensible HyperText Markup Language. Es el siguiente
-          paso en la evolución de internet. XHTML 1.0 es el primer tipo de
-          documento en la familia XHTML.
-        </p>
-        <p>
-          XHTML es casi idéntico a HTML 4.01 con solo algunas diferencias. Esta
-          es una versión más limpia y estricta de HTML 4.01. Si ya conoce HTML,
-          debe prestar poca atención para aprender esta última versión de HTML.
-        </p>
-        <p>
-          XHTML fue desarrollado por World Wide Web Consortium (W3C) para ayudar
-          a los desarrolladores web a hacer la transición de HTML a XML. Al
-          migrar a XHTML hoy, los desarrolladores web pueden ingresar al mundo
-          XML con todos sus beneficios, sin dejar de confiar en la
-          compatibilidad hacia atrás y en el futuro del contenido.
-        </p>
-        <p>
-          Los desarrolladores que migran su contenido a XHTML 1.0 obtienen los
-          siguientes beneficios:
-        </p>
+      <p>
+        Además de las características mencionadas anteriormente, las
+        características destacadas que ofrece HTML son las siguientes:
+      </p>
+      <ol>
         <ul>
           <li>
-            Los documentos XHTML son compatibles con XML, ya que se ven, editan
-            y validan fácilmente con herramientas XML estándar.
+            <p>
+              No es un lenguaje sensible a mayúsculas y minúsculas.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Controla las fuentes, los colores y el posicionamiento mediante
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Trabajadores web: Ciertas aplicaciones web usan scripts pesados
+              para realizar funciones. Los trabajadores web utilizan
+              subprocesos de fondo separados para el procesamiento y no afecta
+              el rendimiento de una página web.
+            </p>
           </li>
           <li>
-            Los documentos XHTML pueden escribirse para funcionar mejor que
-            antes en los navegadores existentes, así como en los nuevos
-            navegadores.
+            <p>
+              Video: puede incrustar video sin complementos o códec patentados
+              por terceros. El video se vuelve tan fácil como insertar una
+              imagen.
+            </p>
           </li>
           <li>
-            Los documentos XHTML pueden utilizar aplicaciones como scripts y
-            applets que se basan en el Modelo de objetos de documentos HTML o en
-            el Modelo de objetos de documentos XML.
+            <p>
+              Lienzo: esta característica permite a un desarrollador web
+              representar gráficos sobre la marcha. Al igual que con el video,
+              no hay necesidad de un complemento.
+            </p>
           </li>
           <li>
-            XHTML le brinda un formato más consistente y bien estructurado para
-            que sus páginas web puedan ser fácilmente analizadas y procesadas
-            por los navegadores web presentes y futuros.
+            <p>
+              Cachés de aplicaciones: las páginas web comenzarán a almacenar
+              cada vez más información localmente en la computadora del
+              visitante. Funciona como las cookies, pero cuando las cookies
+              son pequeñas, la nueva característica permite archivos mucho más
+              grandes. Google Gears es un excelente ejemplo de esto en acción.
+            </p>
           </li>
           <li>
-            Puede mantener, editar, convertir y formatear fácilmente su
-            documento a largo plazo.
-          </li>
-          <li>
-            Dado que XHTML es un estándar oficial del W3C, su sitio web se
-            vuelve más compatible con muchos navegadores y se procesa con mayor
-            precisión.
-          </li>
-          <li>
-            XHTML combina la fuerza de HTML y XML. Además, todos los navegadores
-            habilitados para XML pueden representar páginas XHTML.
-          </li>
-          <li>
-            XHTML define el estándar de calidad para sus páginas web y si sigue
-            eso, entonces sus páginas web se cuentan como páginas web de
-            calidad. El W3C certifica esas páginas con su sello de calidad.
+            <p>
+              Geolocalización: Mejor conocida por su uso en dispositivos
+              móviles, la geolocalización viene con HTML5.
+            </p>
           </li>
         </ul>
       </ol>
-	    
-	    <h1>Conclusiones</h1>
-	     <h2>Leonardo Alberto Reyes Silva (1651833)</h2>
-	      <p>XML es un lenguaje parecido a html pero con algunas mejoras y ventajas que pueden hacer que este lenguaje se a mejor
-		 que html, no depende de navegadores y puede tener un sin fin de etiquetas además de que cada una de las mismas cumple con su unica funcion. 
-  		  XHTMl define un estándar de calidad lo cual es bueno ya que todas las paginas web seria páginas de calidad.</p>
 
-	    
-    </div>
-  </body>
+      <h2>
+        <li>
+          ¿Qué es y para qué sirve un archivo XHTML?
+        </li>
+      </h2>
+
+      <p>
+        HTML significa eXtensible HyperText Markup Language. Es el siguiente
+        paso en la evolución de internet. XHTML 1.0 es el primer tipo de
+        documento en la familia XHTML.
+      </p>
+      <p>
+        XHTML es casi idéntico a HTML 4.01 con solo algunas diferencias. Esta
+        es una versión más limpia y estricta de HTML 4.01. Si ya conoce HTML,
+        debe prestar poca atención para aprender esta última versión de HTML.
+      </p>
+      <p>
+        XHTML fue desarrollado por World Wide Web Consortium (W3C) para ayudar
+        a los desarrolladores web a hacer la transición de HTML a XML. Al
+        migrar a XHTML hoy, los desarrolladores web pueden ingresar al mundo
+        XML con todos sus beneficios, sin dejar de confiar en la
+        compatibilidad hacia atrás y en el futuro del contenido.
+      </p>
+      <p>
+        Los desarrolladores que migran su contenido a XHTML 1.0 obtienen los
+        siguientes beneficios:
+      </p>
+      <ul>
+        <li>
+          Los documentos XHTML son compatibles con XML, ya que se ven, editan
+          y validan fácilmente con herramientas XML estándar.
+        </li>
+        <li>
+          Los documentos XHTML pueden escribirse para funcionar mejor que
+          antes en los navegadores existentes, así como en los nuevos
+          navegadores.
+        </li>
+        <li>
+          Los documentos XHTML pueden utilizar aplicaciones como scripts y
+          applets que se basan en el Modelo de objetos de documentos HTML o en
+          el Modelo de objetos de documentos XML.
+        </li>
+        <li>
+          XHTML le brinda un formato más consistente y bien estructurado para
+          que sus páginas web puedan ser fácilmente analizadas y procesadas
+          por los navegadores web presentes y futuros.
+        </li>
+        <li>
+          Puede mantener, editar, convertir y formatear fácilmente su
+          documento a largo plazo.
+        </li>
+        <li>
+          Dado que XHTML es un estándar oficial del W3C, su sitio web se
+          vuelve más compatible con muchos navegadores y se procesa con mayor
+          precisión.
+        </li>
+        <li>
+          XHTML combina la fuerza de HTML y XML. Además, todos los navegadores
+          habilitados para XML pueden representar páginas XHTML.
+        </li>
+        <li>
+          XHTML define el estándar de calidad para sus páginas web y si sigue
+          eso, entonces sus páginas web se cuentan como páginas web de
+          calidad. El W3C certifica esas páginas con su sello de calidad.
+        </li>
+      </ul>
+    </ol>
+
+    <h1>Conclusiones</h1>
+    <h2>Leonardo Alberto Reyes Silva (1651833)</h2>
+    <p>XML es un lenguaje parecido a html pero con algunas mejoras y ventajas que pueden hacer que este lenguaje se a
+      mejor
+      que html, no depende de navegadores y puede tener un sin fin de etiquetas además de que cada una de las mismas
+      cumple con su unica funcion.
+      XHTMl define un estándar de calidad lo cual es bueno ya que todas las paginas web seria páginas de calidad.</p>
+
+
+  </div>
+</body>
+
 </html>
