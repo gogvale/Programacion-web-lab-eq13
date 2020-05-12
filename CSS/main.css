@@ -49,3 +49,15 @@ code {
   width: 400px;
   align-self: center;
 }
+footer {
+  background-color: rgba(29, 28, 28, 0.829);
+  color: white;
+  height: 10vh;
+  font-size: xx-large;
+  text-align: center;
+  padding: 2em 0;
+}
+aside {
+  text-align: right;
+  margin-top: 5em;
+}
