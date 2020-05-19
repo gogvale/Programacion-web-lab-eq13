@@ -37,6 +37,8 @@
         }
         canvas {
           width: 100%;
+          border: 2px solid black;
+          margin: 1em;
         }
       </style>
       <form>
@@ -53,37 +55,48 @@
         <input required type="number" name="height" id="height" min="0" />
         <br /><input type="submit" value="Dibujar Rectángulo" id="button" />
       </form>
-      <canvas
-        id="lessonCanvas"
-        style="border: 2px solid black; margin: 1em;"
-      ></canvas>
-      <script type="text/javascript">
-        const canvas = document.getElementById("lessonCanvas");
-        const ctx = canvas.getContext("2d");
-        function drawRectangle(color = "", x, y, width, height) {
-          if (canvas.getContext) {
-            ctx.fillStyle = color;
-            ctx.fillRect(x, y, width, height);
-          }
-        }
-        function setup() {
-          drawRectangle(ctx, "green", 70, 30, 125, 130);
-        }
-
-        document
-          .getElementById("button")
-          .addEventListener("click", function (event) {
-            event.preventDefault();
-            let color = document.querySelector("#color").value,
-              x = document.querySelector("#x").value,
-              y = document.querySelector("#y").value,
-              width = document.querySelector("#width").value,
-              height = document.querySelector("#height").value;
-
-            drawRectangle(color, x, y, width, height);
-            console.log(color, x, y, width, height);
-          });
-      </script>
+      <canvas id="lessonCanvas"></canvas>
+      <h2>Conclusiones:</h2>
+      <h3>Gabriel Oliveira Galvão do Vale(1889469)</h3>
+      <p>
+        Esa práctica creo que fue más desafiante que las demás por utilizar más
+        elementos que las prácticas anteriores.
+      </p>
+      <p>De los retos que encontré, los principales fueron:</p>
+      <ul>
+        <li>Crear una aplicación dinámica con puro javascript</li>
+        <li>Capturar información del usuario</li>
+        <li>Crear una función que generara algún dibujo en el canvas</li>
+        <li>Entender el funcionamento con una documentación limitada</li>
+      </ul>
+      <p>Fuera eso creo que la práctica fue bien divertida, y enriquecedora.</p>
     </div>
+    <script type="text/javascript">
+      const canvas = document.getElementById("lessonCanvas");
+      const ctx = canvas.getContext("2d");
+      function drawRectangle(color = "", x, y, width, height) {
+        if (canvas.getContext) {
+          ctx.fillStyle = color;
+          ctx.fillRect(x, y, width, height);
+        }
+      }
+      function setup() {
+        drawRectangle(ctx, "green", 70, 30, 125, 130);
+      }
+
+      document
+        .getElementById("button")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          let color = document.querySelector("#color").value,
+            x = document.querySelector("#x").value,
+            y = document.querySelector("#y").value,
+            width = document.querySelector("#width").value,
+            height = document.querySelector("#height").value;
+
+          drawRectangle(color, x, y, width, height);
+          console.log(color, x, y, width, height);
+        });
+    </script>
   </body>
 </html>
