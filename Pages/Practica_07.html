@@ -33,12 +33,31 @@
       </ul>
     </nav>
     <div class="content">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt
-        quo debitis tempora culpa, sunt explicabo architecto necessitatibus
-        asperiores laborum? Temporibus ab veritatis animi libero sit asperiores
-        aliquam quam reprehenderit?
-      </p>
+      <h2 align="center">Lista de Tareas</h2>
+      <h3>Instrucciones</h3>
+      <ol>
+        <li>Pica en el botón de + para agregar nuevas tareas</li>
+        <li>Arrastra la tarea a la sección de Terminado cuando se termine</li>
+        <li>Disfruta!</li>
+      </ol>
+      <div class="parent">
+        <div class="child">
+          <ul id="todo">
+            <li draggable="true">Tarea</li>
+            <li draggable="true">Tarea</li>
+            <li draggable="true">Tarea</li>
+            <li draggable="true">Tarea</li>
+          </ul>
+          <input type="text" id="tarea-nueva" placeholder="Nueva Tarea" />
+          <input type="button" value="+" onclick="agregarTarea()" />
+        </div>
+        <div class="child">
+          <ul ondragover="">
+            <li>Terminado</li>
+            <li>Terminado</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
