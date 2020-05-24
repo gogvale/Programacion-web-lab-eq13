@@ -55,4 +55,10 @@ ul#todo > li {
   background-color: #17c800;
   color: white;
 }
+
+ul#todo > li:hover {
+  background-color: #15af01;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
 /*# sourceMappingURL=todoList.css.map */

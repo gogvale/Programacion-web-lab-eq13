@@ -45,5 +45,9 @@ ul {
     border-color: rgb(16, 134, 0);
     background-color: rgb(23, 200, 0);
     color: white;
+    &:hover {
+      background-color: rgb(21, 175, 1);
+      cursor: grabbing;
+    }
   }
 }
