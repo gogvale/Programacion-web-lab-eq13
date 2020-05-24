@@ -19,6 +19,9 @@ input[type="text"] {
 }
 ul {
   padding: 0;
+  &#done {
+    min-height: 10em;
+  }
 
   &#todo > li,
   &#done > li {
