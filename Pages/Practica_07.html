@@ -46,15 +46,16 @@
         <div class="child">
           <h3 align="center">Pendientes</h3>
           <ul id="todo">
-            <li draggable="true">Tarea 1</li>
-            <li draggable="true">Tarea 3</li>
+            <li draggable="true" ondragstart="drag(event)">Tarea 1</li>
+            <li draggable="true" ondragstart="drag(event)">Tarea 3</li>
           </ul>
           <input type="text" id="tarea-nueva" placeholder="Nueva Tarea" />
           <input type="button" value="+" onclick="agregarTarea()" />
         </div>
         <div class="child">
           <h3 align="center">Terminadas</h3>
-          <ul id="done" ondragover="">
+          <ul id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <li>Agregar aqui</li>
             <li>Tarea 2</li>
           </ul>
         </div>
@@ -77,9 +78,30 @@
         let ul = document.getElementById("todo");
 
         li.setAttribute("draggable", "true");
+        li.setAttribute("ondragstart", "drag(event)");
+
         li.appendChild(document.createTextNode(tarea.value));
         ul.appendChild(li);
         tarea.value = "";
+      }
+    }
+
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.textContent);
+      // console.log(ev.target.textContent);
+    }
+    function drop(ev) {
+      ev.preventDefault();
+      let data = ev.dataTransfer.getData("text");
+      if (data) {
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(data));
+
+        let ul = document.getElementById("done");
+        ul.appendChild(li);
       }
     }
   </script>
