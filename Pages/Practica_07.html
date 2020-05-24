@@ -12,6 +12,7 @@
     <title>Equipo 13</title>
   </head>
   <body>
+    <link rel="stylesheet" href="../CSS/todoList.css" />
     <header>
       <img src="../Images/fime.gif" alt="Logo Fime" />
       <h1>Universidad Autónoma de Nuevo León</h1>
@@ -42,19 +43,18 @@
       </ol>
       <div class="parent">
         <div class="child">
+          <h3 align="center">Pendientes</h3>
           <ul id="todo">
-            <li draggable="true">Tarea</li>
-            <li draggable="true">Tarea</li>
-            <li draggable="true">Tarea</li>
-            <li draggable="true">Tarea</li>
+            <li draggable="true">Tarea 1</li>
+            <li draggable="true">Tarea 3</li>
           </ul>
           <input type="text" id="tarea-nueva" placeholder="Nueva Tarea" />
           <input type="button" value="+" onclick="agregarTarea()" />
         </div>
         <div class="child">
-          <ul ondragover="">
-            <li>Terminado</li>
-            <li>Terminado</li>
+          <h3 align="center">Terminadas</h3>
+          <ul id="done" ondragover="">
+            <li>Tarea 2</li>
           </ul>
         </div>
       </div>
@@ -62,10 +62,12 @@
   </body>
   <script>
     function agregarTarea() {
-      let li = document.createElement("li");
-      let ul = document.getElementById("todo");
       let tarea = document.getElementById("tarea-nueva");
       if (tarea.value) {
+        let li = document.createElement("li");
+        let ul = document.getElementById("todo");
+
+        li.setAttribute("draggable", "true");
         li.appendChild(document.createTextNode(tarea.value));
         ul.appendChild(li);
         tarea.value = "";
