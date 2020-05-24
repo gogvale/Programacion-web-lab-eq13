@@ -85,13 +85,21 @@
         tarea.value = "";
       }
     }
+    function removerTarea() {
+      let ul = document.querySelector("#todo");
+      let index = [...ul.childNodes].findIndex((item) => item.id === "this");
+      ul.removeChild(ul.childNodes[index]);
+    }
 
     function allowDrop(ev) {
       ev.preventDefault();
     }
     function drag(ev) {
+      // Limpiar el id de todos los elementos
+      let li = document.querySelector("#todo").childNodes;
+      Array.prototype.slice.call(li).map((item) => (item.id = ""));
+      ev.target.id = "this";
       ev.dataTransfer.setData("text", ev.target.textContent);
-      // console.log(ev.target.textContent);
     }
     function drop(ev) {
       ev.preventDefault();
@@ -102,6 +110,7 @@
 
         let ul = document.getElementById("done");
         ul.appendChild(li);
+        removerTarea();
       }
     }
   </script>
