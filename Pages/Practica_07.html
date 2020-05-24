@@ -60,4 +60,16 @@
       </div>
     </div>
   </body>
+  <script>
+    function agregarTarea() {
+      let li = document.createElement("li");
+      let ul = document.getElementById("todo");
+      let tarea = document.getElementById("tarea-nueva");
+      if (tarea.value) {
+        li.appendChild(document.createTextNode(tarea.value));
+        ul.appendChild(li);
+        tarea.value = "";
+      }
+    }
+  </script>
 </html>
